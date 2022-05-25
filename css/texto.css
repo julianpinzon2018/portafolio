@@ -1,0 +1,28 @@
+.texto {
+    max-inline-size: 900px;
+    text-align: center;
+    margin: auto;
+    padding-block-start: 40px;
+    padding-block-end: 40px;
+}
+
+.texto1 {
+    font-size: 24px;
+    line-height: 38.83px;
+}
+
+.texto1y2 h1 {
+    margin-block: 24px;
+    font: var(--headline5);
+}
+
+@media screen and (min-width: 768px) {
+    .texto {
+        padding-block-start: 200px;
+        padding-block-end: 200px;
+    }
+    .texto1 {
+        font-size: 32px;
+        line-height: 55.01px;
+    }
+}
