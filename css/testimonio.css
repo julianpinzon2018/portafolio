@@ -9,31 +9,30 @@
     margin-block: 40px;
     border-radius: 24px;
     box-shadow: -1px -1px 0 0 var(--white);
+    /* align-self: flex-start; */
 }
 
 .testimonio-content p {
     text-align: left;
+    max-block-size: 100%;
+    max-inline-size: 100%;
+    width: auto;
+    height: auto;
 }
 
 .testimonio-image {
     text-align: center;
 }
-
 .testimonio-recomendacion p {
-    font: var(--caption)
+    font: var(--caption);
 }
 .testimonio-referencia p {
     opacity: 0.5;
-}
-
-.testimonio-referencia {
-    font: var(--caption);
+    font: var(--body2);
 }
 
 @media screen and (min-width: 768px) {
-    /* .testimonios {
-        text-align: center;
-    } */
+
     .testimonio-content {
         padding-block: 80px;
         padding-inline: 80px;

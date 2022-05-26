@@ -1,0 +1,29 @@
+.testimony {
+   padding-block-start: 40px;
+   padding-block-end: 40px;
+}
+.testimony-image img {
+    max-inline-size: 100%;
+}
+.testimony-description {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    max-block-size: 334px;
+    max-inline-size: 450px;
+}
+
+@media screen and (min-width: 768px) {
+    .testimony {
+        display: flex;
+        align-items: center;
+        padding-block-start: 80px;
+        padding-block-end: 80px;
+    }
+    .impar:first-child  {
+        order: 2;
+        margin: auto;
+    }
+
+}
+

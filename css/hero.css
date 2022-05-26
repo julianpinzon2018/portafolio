@@ -8,14 +8,14 @@
     gap: 16px;
 }
 
-.hero-social {
-    padding-block-end: 24px;
-}
-
 .hero-image {
     text-align: center;
 }
 
+.hero-image {
+    max-inline-size: 100%;
+    block-size: auto;
+}
 .hero h1 {
     font: var(--headline3);
     margin: 0;

@@ -6,6 +6,12 @@
 @import "./menu.css";
 @import "./texto.css";
 @import "./testimonio.css";
+@import "./testimony.css";
+@import "./social.css";
+@import "./footer.css";
+@import "./form.css";
+@import "./title.css";
+
 
 
 
@@ -30,9 +36,10 @@
 }
 
 body {
+    margin: 0;
     background: var(--gradient);  
     min-block-size: 100vh;
     font: var(--body1);
-    color: var(--purple)
+    color: var(--purple);
 }
 
