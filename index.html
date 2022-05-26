@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Julian Web</title>
     <link rel="stylesheet" href="./css/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;400&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="wrapper">
     <header class="header">
+        <div class="wrapper">
+        <div class="header-content">
         <img src="./images/LOGO.png" width="70" height="20" alt="logo">
-        <nav class="menu">
+        <nav class="menu" aria-label="main-navigation">
             <ul>
                 <li>
                     <a class="is-active" href="#main">Hola</a>
@@ -28,8 +29,11 @@
             </ul>
         </nav>
         <button class="button">CURRÍCULUM</button>
+    </div>
+    </div>
     </header>
-    <section class="hero" id="main">
+    <div class="wrapper">
+    <section aria-label="main" class="hero" id="main">
         <div class="hero-image">
             <img style="border-radius: 12px;" src="./images/julian-en-la-montaña.jpg" width="338" height="330" alt="Foto de Julian">
         </div>
@@ -39,7 +43,7 @@
                 <span>Soy Julian</span>
             </h1>
             <p>Frontend Developer que le encanta implementar diseños que inspiran y atraen a las personas.</p>
-            <div class="hero-social">
+            <div class="social">
                 <a class="button-icon" href="tel:23456789098"><img src="./icons/icon-phone.svg" alt=""></a>
                 <a class="button-icon" href="tel:23456789098"><img src="./icons/icon-important_mail.svg" alt=""></a>
                 <a class="button-icon" href="tel:23456789098"><img src="./icons/icon-instagram.svg" alt=""></a>
@@ -61,16 +65,18 @@
             <img  src="./images/arrow-down.svg" alt="Fleche hacia abajo">
         </div>
     </section>
-    <div class="testimony">
-        <div class="testimony-image">
-            <img src="./images/ipad.png" alt="">
+    <div class="testimony" id="project">
+        <div class="impar">
+            <div id="impar" class="testimony-image">
+                <img class="impar" src="./images/ipad.png" alt="">
+            </div>
         </div>
         <div class="testimony-description">
-            <a href="https://leonidasesteban.com">leonidasesteban.com</a>
+            <a class="title" target="_blank" href="https://leonidasesteban.com">leonidasesteban.com</a>
         <p>Accede a más de 120 proyectos que te ayudarán a mejorar 
             tus habilidades como desarrollador Front-End.</p>
-        <a href="#" class="button">Codigo</a>
-        <a href="https://leonidasesteban.com" class="button">Proyecto</a>
+        <a target="_blank" href="https://julianpinzon2018.github.io/presentation/" class="button is-secondary">Ver Código</a>
+        <a target="_blank" href="https://leonidasesteban.com" class="button">Ver Proyecto</a>
         </div>
     </div>
     <section class="testimonios">
@@ -88,9 +94,101 @@
                         "LEONIDAS ESTEBAN / COFUNDADOR Y CEO LEONIDASESTEBAN.COM".
                     </p>
                 </div>
+        </div>
+    </section>
+    <div class="testimony">
+        <div class="testimony-image">
+            <img src="./images/marvel.png" alt="">
+        </div>
+        <div class="testimony-description">
+            <a class="title" target="_blank" href="https://leonidasesteban.com">leonidasesteban.com</a>
+        <p>Accede a más de 120 proyectos que te ayudarán a mejorar 
+            tus habilidades como desarrollador Front-End.</p>
+        <a target="_blank" href="https://julianpinzon2018.github.io/presentation/" class="button is-secondary">Ver Código</a>
+        <a target="_blank" href="https://leonidasesteban.com" class="button">Ver Proyecto</a>
+        </div>
+    </div>
+    <section class="testimonios">
+        <div class="testimonio-content">
+                <div class="testimonio-image">
+                    <img src="./images/jason.png" alt="Foto de Leonidas">
+                </div>
+                <div class="testimonio-recomendacion">
+                    <p>
+                        "Jaume ha superado mis expectativas desde el diseño hasta el desarrollo".
+                    </p>
+                </div>
+                <div class="testimonio-referencia">
+                    <p>
+                        JASON LOPEZ / COFUNDADOR Y CEO MARVOL
+                    </p>
                 </div>
         </div>
     </section>
+    <div class="testimony">
+        <div class="impar">
+            <div class="testimony-image">
+                <img class="impar" src="./images/📱 Iphone X.png" alt="">
+            </div>
+        </div>
+        <div class="testimony-description">
+            <a class="title" target="_blank" href="https://leonidasesteban.com">leonidasesteban.com</a>
+        <p>Accede a más de 120 proyectos que te ayudarán a mejorar 
+            tus habilidades como desarrollador Front-End.</p>
+        <a target="_blank" href="https://julianpinzon2018.github.io/presentation/" class="button is-secondary">Ver Código</a>
+        <a target="_blank" href="https://leonidasesteban.com" class="button">Ver Proyecto</a>
+        </div>
+    </div>
+    <section class="testimonios">
+        <div class="testimonio-content">
+                <div class="testimonio-image">
+                    <img src="./images/mario.png" alt="Foto de Leonidas">
+                </div>
+                <div class="testimonio-recomendacion">
+                    <p>
+                        "Por primera vez en la historia de nuestra empresa, aparecimos en todas las plataformas en las que trabajamos".
+                    </p>
+                </div>
+                <div class="testimonio-referencia">
+                    <p>
+                        MARCO CORTEZ / NETNET
+                    </p>
+                </div>
+        </div>
+    </section>
+    <form action="action"method="POST" class="form">
+        <div class="form-content">
+        <h2 class="title">Hablemos</h2>
+        <p>Si está interesado en trabajar conmigo en su próximo proyecto, no dude en ponerse en contacto conmigo.</p>
+        <label for="form-name">Nombre completo
+            <input required name="name" id="form-name" type="text" placeholder="Juan">
+        </label>
+        <label for="form-name">Correo electronico
+            <input required name="email" id="form-name" type="email" placeholder="Juan">
+        </label>
+        <label for="form-name">Mensaje
+            <textarea name="message" placeholder="message" id="form-message" cols="30" rows="7"></textarea>
+        </label>
+        <button class="button" type="submit">Enviar mensage</button>
+    </div>
+    </form>
+    <footer class="footer" id="contact">
+        <div class="footer-content">
+        <div class="footer-logo">
+            <img src="./images/LOGO.png" width="70" height="20" alt="logo">
+        </div>
+        <div class="social">
+            <a class="button-icon" href="tel:23456789098"><img src="./icons/icon-phone.svg" alt=""></a>
+            <a class="button-icon" href="tel:23456789098"><img src="./icons/icon-important_mail.svg" alt=""></a>
+            <a class="button-icon" href="tel:23456789098"><img src="./icons/icon-instagram.svg" alt=""></a>
+            <a class="button-icon" href="tel:23456789098"><img src="./icons/icon-twitter_squared.svg" alt=""></a>
+        </div>
+        <div class="footer-copyright">
+            <p>Hecho con &#x2764;&#xFE0F; por Julian.</p>
+            <p>Copyright 2022 - Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</div>
 </div>
     </body>
 </html>
